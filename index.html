@@ -10,76 +10,135 @@
     <title>Document</title>
     <link rel="stylesheet" href="index.css">
 </head>
-
 <body>
-    <nav>
-        <div class="logoo"><img src="logo.png" height="30px"></div>
-        <div>
-            <ul>
-                <li>Wedding card</li>
-                <li>Birthday card</li>
-                <li>Feelings card</li>
-                <li>Annyversary card</li>
+
+
+
+    <!-- Nav Bar -->
+
+    <!-- Start -->
+
+   <header class="headerr">
+        <nav class="navbarr">
+            <div class="logoo"><img src="logo.png" class="img-logo" height="30px"></div>
+            <ul class="nav-menuu">
+                <li class="nav-itemm">
+                    <a href="#" class="nav-linkk">Wedding card</a>
+                </li>
+                <li class="nav-itemm">
+                    <a href="#" class="nav-linkk">Birthday card</a>
+                </li>
+                <li class="nav-itemm">
+                    <a href="#" class="nav-linkk">Feelings card</a>
+                </li>
+                <li class="nav-itemm">
+                    <a href="#" class="nav-linkk">Annyversary card</a>
+                </li>
+                <li class="nav-itemm">
+                   <a class="nav-linkk">Signup/Login</a>
+                </li>
             </ul>
-        </div>
-        <div class="login">Signup|login
-        </div>
-    </nav>
-    <div class="cardd">
-        <div class="bg-imgg">
-            <h2>digital card details</h2>
-        </div>
+
+         
+
+            <div class="hamburgerr">
+                <span class="barr"></span>
+                <span class="barr"></span>
+                <span class="barr"></span>
+               
+            </div>
+        </nav>
+        
+</header>
+
+<!-- End -->
+
+<!-- Cards -->
+
+
+
+<div class="cardd">
+    <div class="bg-imgg">
+        <h2 class="h2">digital card details</h2>
     </div>
-    <div class="content">
-        <div class="crousel">
-            <div id="demo" class="carousel slide" data-bs-ride="carousel">
+</div>
+<div class="content">
+    <div class="crousel">
+        <div id="demo" class="carousel slide" data-bs-ride="carousel">
 
 
-                <div class="carousel-inner">
+            <div class="carousel-inner">
 
-                    <div class="carousel-item active">
-                        <img src="Page1.jpg" class="d-block" style="width: 100%" />
-
-                    </div>
-                    <div class="carousel-item">
-
-                        <img src="Page2.jpg" class="d-block" style="width: 100%" />
-                    </div>
+                <div class="carousel-item active">
+                    <img src="Page1.jpg" class="d-block" style="width: 100%" />
 
                 </div>
+                <div class="carousel-item">
 
+                    <img src="Page2.jpg" class="d-block" style="width: 100%" />
+                </div>
 
-                <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon"></span>
-
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
-                    <span class="carousel-control-next-icon"></span>
-
-                </button>
             </div>
-        </div>
 
 
+            <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
 
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
 
-
-        <div class="title">
-            <h4>Card Title</h4>
-           <span><p style="font-size: 12px;"> $499 <s> $2000</s>
-            <p style="color: green; font-size: 13px;">75% OFF</p>
-            </p></span>
-            <p>Donec eu ornare mi. Sed finibus
-                condimentum mauris, ut dictum eros
-                maximus vitae. Nullam
-                condimentum tortor ac elit feugiat
-                iaculis. Aenean mauris nisl, blandit</p>
+            </button>
         </div>
     </div>
 
 
 
 
-</body>
 
+    <div class="title">
+        <h4 >Card Title</h4>
+       <span><p class="pt" style="font-size: 12px;"> $499 <s> $2000</s>
+        <p style="color: green;  font-size: 13px;">75% OFF</p>
+        </p></span>
+        <p style=" font-size:10px">Donec eu ornare mi. Sed finibus
+            condimentum mauris, ut dictum eros
+            maximus vitae. Nullam
+            condimentum tortor ac elit feugiat
+            iaculis. Aenean mauris nisl, blandit</p>
+    </div>
+
+
+
+   
+</div>
+<h1> Feature</h1>
+<div class="feature">
+
+    <p>Create your card
+        in just 5 mins</p>
+    <p>Customize the Text with
+        "Edit this Page" Option</p>
+    <p>Editing is available 
+        after purchase also</p>
+</div>
+
+<script>const hamburgerr = document.querySelector(".hamburgerr");
+    const navMenu = document.querySelector(".nav-menuu");
+    
+    hamburgerr.addEventListener("click", mobileMenu);
+    
+    function mobileMenu() {
+        hamburgerr.classList.toggle("active");
+        navMenu.classList.toggle("active");
+        const navLink = document.querySelectorAll(".nav-linkk");
+
+navLink.forEach(n => n.addEventListener("click", closeMenu));
+
+function closeMenu() {
+    hamburgerr.classList.remove("active");
+    navMenu.classList.remove("active");
+}
+    }</script>
+</body>
 </html>
