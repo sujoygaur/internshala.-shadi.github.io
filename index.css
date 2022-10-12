@@ -1,0 +1,140 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+nav{
+    display: flex;
+  
+
+}
+ul{
+    display: flex;
+}
+li{
+    list-style: none;
+    padding-left: 30px;
+    font-size: 10px;
+    padding-bottom: 2px;
+    padding-top: 10px;
+}
+
+.login{
+    font-size: 10px;
+  padding-left: 100px;
+    padding-top: 10px;
+   
+}
+.cardd{
+  padding-left: 45px;
+  align-items: center;
+    
+    margin-top: 20px;
+    position: absolute;
+    z-index: -1;
+    
+   
+}
+.bg-imgg{
+    background-image: url("Background.jpg");
+    height: 100px;
+    width: 550px;
+    color: white;
+    text-align: center;
+    padding-top: 10px;
+  
+  
+
+
+}
+ .crousel{
+    height: 200px;
+    width: 30%;
+   
+    padding-right: 50px;
+     
+   
+     
+}
+
+
+.title{
+    width: 50%;
+   
+    height: 200px;
+   
+    text-align: center;
+    padding-left: 30px;
+ 
+}
+.title p{
+    font-size: 8px;
+    text-align: center;
+}
+.content{
+   background-color: white;
+ /* width: 0,auto; */
+ display: flex;
+ justify-content: center;
+ align-items:center ;
+ width: 500px;
+ height: 220px;
+ border-radius: 30px;
+ margin-left: 70px;
+ margin-right: 10px;
+ position: relative;
+ margin-top: 90px;
+ border: solid rgb(34, 31, 31) ;
+ 
+ 
+ 
+
+
+ 
+ 
+
+   
+}
+.carousel {
+    height: 200px;
+     position: relative; 
+     overflow: hidden;
+    width: 150px;
+  } 
+
+  @media screen and (max-width:480px){
+    .login{
+        font-size: 10px;
+      padding-left: 100px;
+        padding-top: 10px;
+    }
+        .content{
+            border: 0px;
+            display:flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            justify-items: center;
+            margin-top: 10rem;
+        }
+        .crousel{
+            
+            max-width: 100%;
+            margin: 0px;
+            padding: 0%;
+        }
+      
+        .carousel {
+         
+        width: 350px;
+        margin-left:-145px; 
+        height: 400px;
+        }
+        .title{
+            padding-top:200px ;
+            text-align: center;   
+        }
+  }
